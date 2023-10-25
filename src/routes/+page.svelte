@@ -1,6 +1,8 @@
 <script lang="ts">
-	import auth from "$lib/auth"
 	import user from "$lib/user"
+	import { getAuth } from "firebase/auth"
+
+    let auth = getAuth()
 
     async function logout () {
         await auth.signOut()

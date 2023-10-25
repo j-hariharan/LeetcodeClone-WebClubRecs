@@ -8,3 +8,4 @@ node_modules
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+/leetcode-webclub-firebase-adminsdk-ythqa-6a891eb4f6.json

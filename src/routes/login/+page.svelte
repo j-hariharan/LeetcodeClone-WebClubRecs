@@ -1,8 +1,9 @@
 <script lang = "ts">
 	import { goto } from "$app/navigation"
-	import auth from "$lib/auth"
 	import user from "$lib/user"
-    import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+    import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth"
+
+    let auth = getAuth()
 
     let loading = false, error = false
     $: if ($user) goto("/")
